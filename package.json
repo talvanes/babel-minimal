@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Babel Node Repository Template",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
     "start": "babel-node index.js"
   },

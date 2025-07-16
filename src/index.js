@@ -1,4 +1,4 @@
-import Car from "./src/car"
+import Car from "./car"
 
 let toyotaCorolla = new Car("Toyota", "Corolla")
 toyotaCorolla.startEngine()

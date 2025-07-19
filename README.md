@@ -1,4 +1,3 @@
-# babel-node
 
 A modern Node.js project template using Babel for ES6+ support.
 
@@ -6,9 +5,9 @@ A modern Node.js project template using Babel for ES6+ support.
 
 - Babel with `@babel/preset-env` for modern JavaScript syntax
 - Example [`Car`](src/car.js) class using ES6 modules
-- Entry point: [`index.js`](index.js) demonstrates usage of the Car class
+- Entry point: [`index.js`](src/index.js) demonstrates usage of the Car class
 - Development mode with hot-reloading via Nodemon and Babel Node
-- Production-ready build process with transpiled output
+- Production-ready build process with transpiled output to `dist/`
 
 ## Getting Started
 
@@ -21,19 +20,19 @@ A modern Node.js project template using Babel for ES6+ support.
    ```sh
    npm run dev
    ```
-   This uses Nodemon and Babel Node to run [`index.js`](index.js) with automatic reload on changes.
+   This uses Nodemon and Babel Node to run [`src/index.js`](src/index.js) with automatic reload on changes.
 
 3. **Build for production:**
    ```sh
    npm run build
    ```
-   This transpiles the source code from `src/` to `dist/` directory using Babel.
+   This transpiles the source code from `src/` to the `dist/` directory using Babel.
 
 4. **Run in production mode:**
    ```sh
    npm start
    ```
-   This builds the project and runs the transpiled code from the `dist/` directory.
+   This builds the project (if not already built) and runs the transpiled code from the `dist/` directory.
 
 ## Project Structure
 
@@ -45,10 +44,12 @@ A modern Node.js project template using Babel for ES6+ support.
 ├── dist/             # Production build output (generated)
 ├── babel.config.js   # Babel configuration
 ├── package.json      # Project metadata and scripts
+├── nodemon.json      # Nodemon configuration for development
+├── LICENSE.txt       # License file
 └── ...
 ```
 
 ## License
 
-See [`LICENSE.txt`](LICENSE.txt).
+See [`LICENSE`](LICENSE).
 

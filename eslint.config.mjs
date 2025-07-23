@@ -1,8 +1,8 @@
-import js from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
-import { defineConfig } from 'eslint/config';
-import globals from 'globals';
+import js from '@eslint/js'
+import eslintConfigPrettier from 'eslint-config-prettier/flat'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import { defineConfig } from 'eslint/config'
+import globals from 'globals'
 
 export default defineConfig([
     {
@@ -12,6 +12,12 @@ export default defineConfig([
         rules: {
             'no-unused-vars': 'warn',
             'no-undef': 'warn',
+            'prettier/prettier': [
+                'error',
+                {
+                    semi: false,
+                },
+            ],
         },
         ignores: [
             '**/node_modules/**',
@@ -27,4 +33,4 @@ export default defineConfig([
     },
     eslintConfigPrettier,
     eslintPluginPrettierRecommended,
-]);
+])

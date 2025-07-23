@@ -1,5 +1,7 @@
 
-A modern Node.js project template using Babel for ES6+ support.
+# Babel Minimal
+
+A modern Node.js project template using Babel for ES6+ support, with built-in code quality tools.
 
 ## Features
 
@@ -8,6 +10,10 @@ A modern Node.js project template using Babel for ES6+ support.
 - Entry point: [`index.js`](src/index.js) demonstrates usage of the Car class
 - Development mode with hot-reloading via Nodemon and Babel Node
 - Production-ready build process with transpiled output to `dist/`
+- Code quality tools:
+  - ESLint for code linting and best practices enforcement
+  - Prettier for consistent code formatting
+  - Integration of ESLint with Prettier for conflict-free operation
 
 ## Getting Started
 
@@ -34,6 +40,26 @@ A modern Node.js project template using Babel for ES6+ support.
    ```
    This builds the project (if not already built) and runs the transpiled code from the `dist/` directory.
 
+5. **Code Quality:**
+   ```sh
+   # Run ESLint to check for issues
+   npm run lint
+
+   # Fix auto-fixable ESLint issues
+   npm run lint:fix
+   ```
+   The project uses ESLint with Prettier integration for consistent code style and quality.
+
+## Code Style
+
+This project enforces consistent code style using Prettier with the following key settings:
+- Semi-colons required
+- Single quotes for strings
+- 4 spaces indentation
+- ES5-style trailing commas
+
+ESLint is configured to work harmoniously with Prettier, providing both code quality checks and consistent formatting.
+
 ## Project Structure
 
 ```
@@ -42,10 +68,12 @@ A modern Node.js project template using Babel for ES6+ support.
 │   ├── index.js      # Entry point, imports and uses Car class
 │   └── car.js        # Car class (ES6 module)
 ├── dist/             # Production build output (generated)
-├── babel.config.js   # Babel configuration
-├── package.json      # Project metadata and scripts
-├── nodemon.json      # Nodemon configuration for development
-├── LICENSE.txt       # License file
+├── .eslintrc.js     # ESLint configuration
+├── .prettierrc      # Prettier configuration
+├── babel.config.js  # Babel configuration
+├── package.json     # Project metadata and scripts
+├── nodemon.json     # Nodemon configuration for development
+├── LICENSE.txt      # License file
 └── ...
 ```
 

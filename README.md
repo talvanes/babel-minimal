@@ -50,15 +50,24 @@ A modern Node.js project template using Babel for ES6+ support, with built-in co
    ```
    The project uses ESLint with Prettier integration for consistent code style and quality.
 
-## Code Style
+## Code Style & Linting
 
-This project enforces consistent code style using Prettier with the following key settings:
+This project uses modern ESLint flat configuration (`eslint.config.mjs`) with the following features:
+- Latest ESLint configuration format using ES modules
+- Node.js global environment pre-configured
+- Customized rules:
+  - Warning level for unused variables and undefined references
+  - Recommended JavaScript rules enabled
+- Intelligent file ignores for `node_modules`, `dist`, `coverage`, etc.
+- Seamless integration with Prettier
+
+Prettier enforces consistent code style with these settings:
 - Semi-colons required
 - Single quotes for strings
 - 4 spaces indentation
 - ES5-style trailing commas
 
-ESLint is configured to work harmoniously with Prettier, providing both code quality checks and consistent formatting.
+The ESLint configuration uses the new flat config format introduced in ESLint 9.0, providing better performance and more flexible configuration options. It integrates perfectly with Prettier through `eslint-config-prettier` and `eslint-plugin-prettier`.
 
 ## Project Structure
 
@@ -68,7 +77,7 @@ ESLint is configured to work harmoniously with Prettier, providing both code qua
 │   ├── index.js      # Entry point, imports and uses Car class
 │   └── car.js        # Car class (ES6 module)
 ├── dist/             # Production build output (generated)
-├── .eslintrc.js     # ESLint configuration
+├── eslint.config.mjs # ESLint flat configuration (modern format)
 ├── .prettierrc      # Prettier configuration
 ├── babel.config.js  # Babel configuration
 ├── package.json     # Project metadata and scripts

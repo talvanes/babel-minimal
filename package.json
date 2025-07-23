@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A modern Node.js project template using Babel for ES6+ support, with built-in code quality tools.",
   "main": "src/index.js",
-  "type": "module",
   "scripts": {
     "dev": "nodemon",
     "build": "babel src -d dist",

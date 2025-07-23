@@ -1,4 +1,4 @@
-import Car from './car.js'
+import Car from './car'
 
 const cars = new Set([
     ['Toyota', 'Corolla'],

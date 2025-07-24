@@ -4,6 +4,3 @@ dist
 coverage
 .DS_Store
 *.json
-*.config.js
-*.config.mjs
-*.config.cjs

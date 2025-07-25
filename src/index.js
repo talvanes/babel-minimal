@@ -1,10 +1,12 @@
-import Car from '@src/car'
+import Car from '@root/car'
 
 const cars = new Set([
     ['Toyota', 'Corolla'],
     ['Ford', 'Mustang'],
+    ['Chevrolet', 'Camaro'],
     ['Honda', 'Civic'],
-    ['Tesla', 'Model S'],
+    ['Nissan', 'Altima'],
+    ['Toyota', 'Camry'],
 ])
 
 cars.forEach(([make, model]) => {

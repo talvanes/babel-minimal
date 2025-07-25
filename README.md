@@ -11,7 +11,7 @@ A minimalistic Node.js project template using Babel for ES6+ support, focusing o
 - Development mode with hot-reloading via Nodemon and Babel Node
 - Production-ready build process with transpiled output to `dist/`
 - Enhanced module resolution:
-  - Configured module aliases (`@`, `@src`, `@tests`)
+  - Configured module aliases (`@`, `@root`, `@tests`)
   - Simplified imports with absolute-like paths
   - Clean and maintainable import statements
 - Code quality tools:
@@ -77,7 +77,7 @@ The ESLint configuration uses the new flat config format introduced in ESLint 9.
 
 This project uses Babel's module-resolver plugin to enable clean and maintainable import paths. The following aliases are configured:
 
-- `@` or `@src` - Points to the `./src` directory
+- `@` or `@root` - Points to the `./src` directory
   ```javascript
   // Instead of
   import Car from '../../../src/car'
@@ -85,7 +85,7 @@ This project uses Babel's module-resolver plugin to enable clean and maintainabl
   // You can use
   import Car from '@/car'
   // or
-  import Car from '@src/car'
+  import Car from '@root/car'
   ```
 - `@tests` - Points to the `./tests` directory
   ```javascript
